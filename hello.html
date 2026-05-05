@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*
+Source - https://stackoverflow.com/a/62272846
+Posted by Rene van der Lende, modified by community. See post 'Timeline' for change history
+Retrieved 2026-04-22, License - CC BY-SA 4.0
+*/
+
+.dropdown {
+  display: inline-block;
+
+  /* ADDED for some spacing */
+  margin: 5rem; max-width: 20rem
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  transition: 1s;
+}
+
+/* MODDED */
+.dropdown > span:hover + .dropdown-content {
+  display: block;
+}
+
+/* ADDED */
+.dropdown-content.absolute { position: absolute }
+</style>
+<body>
+    <!--
+Source - https://stackoverflow.com/a/62272846
+Posted by Rene van der Lende, modified by community. See post 'Timeline' for change history
+Retrieved 2026-04-22, License - CC BY-SA 4.0
+-->
+
+<div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+    <p>Hello World!</p>
+  </div>
+  <p>without new stacking context<br>z-index has no effect</p>
+</div>
+
+</body>
+</html>
