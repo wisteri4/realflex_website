@@ -24,9 +24,12 @@ document.getElementById("search-row").addEventListener("submit", function(event)
 
     const availableSearches = {
         "faq" : "aboutus.html",
+        "frequently asked questions" : "aboutus.html",
         "locations" : "locations.html",
         "form" : "contactus.html",
         "about chair" : "aboutus.html",
+        "massage chair" : "locations.html",
+        "massage chairs" : "locations.html",
         "chair benefits" : "index.html",
         "product" : "locations.html"
     };
