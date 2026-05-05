@@ -384,7 +384,6 @@ footer{
   }
 
   p{
-
     color: var(--honeygold);
   }
 
@@ -409,6 +408,8 @@ footer{
       border-left: 2px solid var(--honeygold);
       p{
         padding-left: 5px;
+       color: var(--honeygold);
+       text-decoration: none;
       }
     }
 
